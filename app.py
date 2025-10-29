@@ -32,6 +32,5 @@ best_buy_items = [
 }
 ]
 
-
 for index, item in enumerate(best_buy_items):
     print(index, ":", item["name"])
