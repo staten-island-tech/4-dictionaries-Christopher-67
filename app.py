@@ -7,10 +7,10 @@ best_buy_items = [
     "description": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps."
 },
 {
-    "name":"25$ apple gift card\" Prepaid Card",
+    "name": "25$ Apple Gift Card (Prepaid)",
     "price": 25.00,
     "department": "Gift Cards",
-    "description": "Prepaid card redeemable at app store and other apple retail locations"
+    "description": "Prepaid card redeemable at Apple Store and other Apple retail locations."
 },
 {
     "name": "Apple AirPods Pro 2nd Generation",
