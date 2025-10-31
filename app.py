@@ -62,36 +62,36 @@ best_buy_items = [
     }
 ]
 
-print("Best buy items")
-print("Items available:")
+print("best buy items")
+print("items available:")
 for index, item in enumerate(best_buy_items):
     print(index, ":", item["name"])
 
-choice = int(input("Enter the number of item: "))
+choice = int(input("enter the number of item: "))
 selected_item = best_buy_items[choice]
-print("Selected this item:", selected_item["name"])
+print("selected this item:", selected_item["name"])
 
 cart = []
 total_price = 0
 shopping = True
 
 while shopping:
-    print("Available items: ")
+    print("available items: ")
     for i, item in enumerate(best_buy_items):
         print(i, ":", item["name"], "- $", item["price"])
 
-    choice = int(input("Enter the number of items: "))
+    choice = int(input("enter the number of items: "))
     selected_item = best_buy_items[choice]
     cart.append(selected_item)
     total_price += selected_item["price"]
+    
+    print("added to cart:", selected_item["name"])
 
-    print("Added to cart:", selected_item["name"])
-
-    continue_shopping = input("Do you want to continue shopping? (yes/no): ").lower()
+    continue_shopping = input("do you want to continue shopping?: ").lower()
     if continue_shopping != "yes":
         shopping = False
 
-print("\nYour shopping cart:")
+print("your shopping cart:")
 for item in cart:
     print("-", item["name"], "- $", item["price"])
-print("Total price: $", total_price)
+print("total price: $", total_price)
